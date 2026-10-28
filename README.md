@@ -14,6 +14,8 @@ Template repository for creating Python CLI utilities deployed via `sstix-tools`
 ├── packaging/
 │   ├── debian/                    # Debian package metadata (Depends: python3)
 │   └── rpm/                       # RPM spec file (Requires: python3)
+├── flake.nix                      # Nix package & app definition
+├── flake.lock                     # Nix lockfile
 ├── LICENSE
 └── README.md
 ```
@@ -24,6 +26,7 @@ Template repository for creating Python CLI utilities deployed via `sstix-tools`
    - `bin/template-python-utility` -> `bin/<your-tool>`
    - `completion/_template-python-utility` -> `completion/_<your-tool>`
    - `packaging/rpm/template-python-utility.spec` -> `packaging/rpm/<your-tool>.spec`
+   - In `flake.nix`: update `pname = "<your-tool>"` and description
    - In `.github/workflows/release.yaml`: update `pkg_name="<your-tool>"`
    - In `packaging/debian/control`: update `Package:` and `Description:`
 3. Implement your utility logic in `bin/<your-tool>`.
