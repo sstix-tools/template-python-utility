@@ -1,0 +1,28 @@
+name: Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out source
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Syntax check and execution test
+        run: |
+          python3 -m py_compile bin/template-python-utility
+          chmod +x bin/template-python-utility
+          ./bin/template-python-utility --help
+          ./bin/template-python-utility --version
+          ./bin/template-python-utility status

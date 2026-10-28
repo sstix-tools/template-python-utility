@@ -1,0 +1,12 @@
+Source: template-python-utility
+Section: utils
+Priority: optional
+Maintainer: sstix-tools <tools@sstix.invalid>
+Standards-Version: 4.6.0
+Rules-Requires-Root: no
+
+Package: template-python-utility
+Architecture: all
+Depends: python3
+Description: Python CLI utility template
+ A Python utility script packaged for sstix-tools.

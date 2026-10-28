@@ -1,0 +1,2 @@
+bin/template-python-utility usr/bin
+completion/_template-python-utility usr/share/zsh/site-functions
