@@ -99,7 +99,7 @@ jobs:
           Section: utils
           Priority: optional
           Architecture: all
-          Maintainer: sstix-tools <tools@sstix.invalid>
+          Maintainer: sstix-tools <sstix@stix.foo>
           Depends: python3
           Description: Python CLI utility template
            A Python utility script packaged for sstix-tools.
